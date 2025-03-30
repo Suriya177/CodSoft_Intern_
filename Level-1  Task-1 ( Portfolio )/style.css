@@ -1,0 +1,219 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+} 
+body{
+    height: 100vh;
+    background-color: black;
+    /* background: radial-gradient(#0f8f8fa1, #000000); */  /*For COlored Background*/
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.anim{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 0.5s linear forwards;
+  }
+@keyframes moveup{
+    100%{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+}
+
+nav{
+    background: transparent;
+    padding: 25px;
+
+    /*nav stcky fixed*/
+    position: fixed;
+    top: 0;
+    /* background-color: black; */
+    width: 100%;
+    z-index: 1000;
+
+}
+nav li,nav ul,nav h1{
+    display: inline;
+}
+nav h1{
+    color: white;
+    margin-left: 50px;
+    font-weight: bold;
+}
+nav ul{
+    margin-left: 55%;
+}
+nav li{
+    margin: 0 25px;
+    position: relative;
+}
+nav li::after{
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: #00ffff;
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    transition: .5s;
+}
+nav li:hover::after{
+    width: 100%;
+}
+nav li a{
+    text-decoration: none;
+    color: white;
+}
+
+.box1{
+    width: 600px;
+    margin: 220px 0 0 70px;
+    animation-delay: 1s;
+}
+.box1 h1{
+    font-size: 4em;
+    animation-delay: 0.2s;
+}
+.box1 h2{ 
+    margin: 10px 0;
+    font-size: 3em;
+    animation-delay: 0.5s;
+}
+.box1 p{
+    animation-delay: 0.5s;
+}
+.flex1{
+    margin-top: 0px;
+    margin-bottom: 225px;
+}
+.flex1 img{
+    height: 550px;
+    position: absolute;
+    top: 12%;
+    left: 58%;
+    animation-delay: 1.2s;
+    filter: drop-shadow(#00ffff 0px 5px 10px);
+}
+.box1 button{
+    margin-top: 15px;
+    height: 40px;
+    width: 100px;
+    background: transparent;
+    border: solid 2px #00ffff;
+    border-radius: 20px;
+    filter: drop-shadow(#00ffff 0px 0px 10px);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+    animation-delay: 0.7s;
+}
+.box1 button:hover{
+    color: black;
+    background-color: #00ffff;
+}
+
+.line1{
+    margin-top: 30vh;
+    height: 5px;  /*-------------------------*/
+    background-color: #00ffff;
+    box-shadow: #00ffff 0px 0px 15px;
+}
+
+.flex2{
+    /* background-color: gray; */
+    height: 99vh;
+    width: 100%;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+}
+.flex2 h1{
+    margin-top: 50px;
+    font-weight:bold;
+    font-size: 40px;
+}
+.flex2 center{
+    padding: 0 100px;
+}
+.flex2 p{
+    margin-top: 100px;
+    font-size: 25px;
+}
+.flex2 p b{
+    color: #00ffff;
+}
+.line2{
+    height: 5px; 
+    background-color: #00ffff;
+    box-shadow: #00ffff 0px 0px 15px;   
+}
+.flex3{
+    height: 91vh;
+}
+.flex3 h1{
+    margin-top: 50px;
+    text-align: center;
+    
+}
+.flex3 img{
+    height: 250px;
+}
+.flex3 .Images{
+    /* background-color: grey; */
+    height: 500px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.line3{
+    height: 5px; 
+    background-color: #00ffff;
+    box-shadow: #00ffff 0px 0px 15px;  
+}
+.flex4{
+    height: 88vh;
+}
+.flex4 h1{
+    margin-top: 70px;
+    text-align: center;
+}
+.flex4 .text{
+    margin-top: 20px;
+    height: 500px;
+    width: 100%;
+    display: flex;
+    /* background-color: grey; */
+    align-items: center;
+}
+.flex4 .text pre{
+    font-size: 30px;
+    color: #00ffff;
+}
+.flex4 b,a{
+    text-decoration: none;
+    color: white;
+}
+.line4{
+    height: 5px;
+    background-color: #00ffff;
+    box-shadow: #00ffff 0px 0px 15px;
+}
+.flex2 center{
+    animation-delay: .5s;
+}
+.flex3 .Images{
+    animation-delay: .5s;
+}
+.flex4 .text{
+    animation-delay: .5s;
+}
+.gil{
+    text-shadow: #00ffff 0px 0px 20px;
+}

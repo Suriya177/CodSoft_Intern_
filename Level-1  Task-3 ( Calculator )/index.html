@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex">
+        <div class="calculator">
+            <div class="display">
+                <input type="text" id="ans"></input>
+            </div>
+            <div class="buttons">
+                <button onclick="val('7')">7</button>
+                <button onclick="val('8')">8</button>
+                <button onclick="val('9')">9</button>
+                <button onclick="val('/')">/</button>
+                <button onclick="val('4')">4</button>
+                <button onclick="val('5')">5</button>
+                <button onclick="val('6')">6</button>
+                <button onclick="val('*')">*</button>
+                <button onclick="val('1')">1</button>
+                <button onclick="val('2')">2</button>
+                <button onclick="val('3')">3</button>
+                <button onclick="val('-')">-</button>
+                <button onclick="val('.')">.</button>
+                <button onclick="val('0')">0</button>
+                  <button onclick="clr()">AC</button>
+                <button onclick="val('+')">+</button>
+            </div>
+            <button id="eq" onclick="equal()">=</button>
+        </div>
+    </div>
+        
+    <script>
+        let answer = document.getElementById('ans');
+
+        function val(value){
+            answer.value += value;
+        }
+
+        function clr(){
+            answer.value = ' ';
+        }
+
+        function equal(){
+            answer.value = eval(answer.value);
+        }
+    </script>
+</body>
+</html>
